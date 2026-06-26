@@ -253,3 +253,72 @@ a:hover {
     font-weight: 700;
     color: var(--primary);
 }
+
+.checkout-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.card-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.autocomplete-container {
+    position: relative;
+}
+
+.suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    margin-top: 0.25rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    z-index: 20;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.suggestions-list li {
+    list-style: none;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+}
+
+.suggestions-list li:hover {
+    background: #F3F4F6;
+}
+
+.btn-small {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.875rem;
+}
+
+.btn-success {
+    background-color: var(--success);
+    color: white !important;
+}
+
+.error-message {
+    color: var(--danger);
+    margin-top: 0.75rem;
+    font-weight: 500;
+}
+
+.shipping-table td, .shipping-table th {
+    white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    .checkout-layout {
+        grid-template-columns: 1fr;
+    }
+}

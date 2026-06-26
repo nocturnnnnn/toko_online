@@ -32,13 +32,13 @@ if (isset($_POST['register'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Toko Online</title>
+    <title>Register - Nocturn Shop</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="nav-container">
-            <a href="../index.php" class="brand">TokoOnline</a>
+            <a href="../index.php" class="brand">Nocturn Shop</a>
         </div>
     </header>
 

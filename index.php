@@ -7,14 +7,14 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toko Online Premium</title>
+    <title>Nocturn Shop</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <header class="header">
         <div class="nav-container">
-            <a href="index.php" class="brand">TokoOnline</a>
+            <a href="index.php" class="brand">Nocturn Shop</a>
             <div class="nav-links">
                 <?php if (isset($_SESSION['user'])) : ?>
                     <span style="font-weight: 500;">Halo, <?= htmlspecialchars($_SESSION['user']['nama']); ?></span>
@@ -35,7 +35,7 @@ session_start();
 
     <main class="container">
         <div style="text-align: center; padding: 4rem 0;">
-            <h1 style="font-size: 3rem; margin-bottom: 1rem; color: var(--text-primary);">Selamat Datang di Toko Online</h1>
+            <h1 style="font-size: 3rem; margin-bottom: 1rem; color: var(--text-primary);">Selamat Datang di Nocturn Shop</h1>
             <p style="font-size: 1.25rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem;">Temukan berbagai produk berkualitas dengan harga terbaik. Mulai belanja sekarang juga!</p>
             <a href="produk.php" class="btn btn-primary" style="font-size: 1.125rem; padding: 0.75rem 2rem;">Lihat Produk Kami</a>
         </div>

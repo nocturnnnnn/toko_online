@@ -28,14 +28,14 @@ $ada_barang = mysqli_num_rows($query) > 0;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keranjang Belanja - Toko Online</title>
+    <title>Keranjang Belanja - Nocturn Shop</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
     <header class="header">
         <div class="nav-container">
-            <a href="../index.php" class="brand">TokoOnline</a>
+            <a href="../index.php" class="brand">Nocturn Shop</a>
             <div class="nav-links">
                 <a href="../produk.php">Produk</a>
                 <a href="../index.php">Beranda</a>

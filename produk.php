@@ -18,7 +18,7 @@ $query = mysqli_query($conn, "SELECT * FROM produk");
 
     <header class="header">
         <div class="nav-container">
-            <a href="index.php" class="brand">TokoOnline</a>
+            <a href="index.php" class="brand">Nocturn Shop</a>
             <div class="nav-links">
                 <a href="index.php">Beranda</a>
                 <a href="cart/keranjang.php">Keranjang</a>

@@ -17,7 +17,7 @@ $query = mysqli_query($conn, "SELECT * FROM produk ORDER BY id DESC");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard - Toko Online</title>
+    <title>Admin Dashboard - Nocturn Shop</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>

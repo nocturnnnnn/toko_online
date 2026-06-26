@@ -17,14 +17,14 @@ $query = mysqli_query($conn, "SELECT * FROM pesanan WHERE user_id = '$user_id' O
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesanan Saya - Toko Online</title>
+    <title>Pesanan Saya - Nocturn Shop</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
     <header class="header">
         <div class="nav-container">
-            <a href="../index.php" class="brand">TokoOnline</a>
+            <a href="../index.php" class="brand">Nocturn Shop</a>
             <div class="nav-links">
                 <a href="../produk.php">Produk</a>
                 <a href="../index.php">Beranda</a>

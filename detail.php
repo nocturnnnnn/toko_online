@@ -30,7 +30,7 @@ if(!$produk) {
 
     <header class="header">
         <div class="nav-container">
-            <a href="index.php" class="brand">TokoOnline</a>
+            <a href="index.php" class="brand">Nocturn Shop</a>
             <div class="nav-links">
                 <a href="produk.php">Kembali ke Produk</a>
                 <a href="cart/keranjang.php">Keranjang</a>
@@ -57,9 +57,14 @@ if(!$produk) {
                 <div style="font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 1rem;">
                     Rp <?= number_format($produk['harga'] ?? 0, 0, ',', '.'); ?>
                 </div>
-                
-                <div style="display: inline-block; background: #EEF2FF; color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 9999px; font-weight: 500; font-size: 0.875rem; margin-bottom: 2rem;">
-                    Sisa Stok: <?= htmlspecialchars($produk['stok'] ?? 0); ?>
+
+                <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+                    <div style="display: inline-block; background: #EEF2FF; color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 9999px; font-weight: 500; font-size: 0.875rem;">
+                        Kategori: <?= htmlspecialchars($produk['kategori'] ?? 'Lainnya'); ?>
+                    </div>
+                    <div style="display: inline-block; background: #EEF2FF; color: var(--primary); padding: 0.25rem 0.75rem; border-radius: 9999px; font-weight: 500; font-size: 0.875rem;">
+                        Sisa Stok: <?= htmlspecialchars($produk['stok'] ?? 0); ?>
+                    </div>
                 </div>
 
                 <div style="margin-bottom: 2rem;">

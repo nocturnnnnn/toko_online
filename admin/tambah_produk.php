@@ -11,6 +11,7 @@ if (!isset($_SESSION['user']) || $_SESSION['user']['role'] !== 'admin') {
 
 if (isset($_POST['simpan'])) {
     $nama = $_POST['nama'];
+    $kategori = $_POST['kategori'];
     $deskripsi = $_POST['deskripsi'];
     $harga = $_POST['harga'];
     $stok = $_POST['stok'];
@@ -28,8 +29,8 @@ if (isset($_POST['simpan'])) {
 
     mysqli_query(
         $conn,
-        "INSERT INTO produk(nama_produk, deskripsi, harga, stok, gambar)
-         VALUES('$nama', '$deskripsi', '$harga', '$stok', $gambar_val)"
+        "INSERT INTO produk(nama_produk, kategori, deskripsi, harga, stok, gambar)
+         VALUES('$nama','$kategori', '$deskripsi', '$harga', '$stok', $gambar_val)"
     );
 
     header("Location: index.php");
@@ -71,6 +72,19 @@ if (isset($_POST['simpan'])) {
                 <div class="form-group">
                     <label for="nama">Nama Produk</label>
                     <input type="text" name="nama" id="nama" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="kategori">Kategori</label>
+                    <select name="kategori" id="kategori" class="form-control" required>
+                        <option value="">Pilih Kategori</option>
+                        <option value="Elektronik">Elektronik</option>
+                        <option value="Fashion">Fashion</option>
+                        <option value="Kecantikan">Kecantikan</option>
+                        <option value="Olahraga">Olahraga</option>
+                        <option value="Rumah Tangga">Rumah Tangga</option>
+                        <option value="Lainnya">Lainnya</option>
+                    </select>
                 </div>
 
                 <div class="form-group">

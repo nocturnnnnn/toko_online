@@ -27,6 +27,7 @@ if (!$produk) {
 
 if (isset($_POST['update'])) {
     $nama = $_POST['nama'];
+    $kategori = $_POST['kategori'];
     $deskripsi = $_POST['deskripsi'];
     $harga = $_POST['harga'];
     $stok = $_POST['stok'];
@@ -52,6 +53,7 @@ if (isset($_POST['update'])) {
         $conn,
         "UPDATE produk SET 
             nama_produk='$nama', 
+            kategori='$kategori',
             deskripsi='$deskripsi', 
             harga='$harga', 
             stok='$stok',
@@ -104,6 +106,19 @@ if (isset($_POST['update'])) {
                 <div class="form-group">
                     <label for="nama">Nama Produk</label>
                     <input type="text" name="nama" id="nama" class="form-control" value="<?= htmlspecialchars($produk['nama_produk'] ?? ''); ?>" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="kategori">Kategori</label>
+                    <select name="kategori" id="kategori" class="form-control" required>
+                        <option value="">Pilih Kategori</option>
+                        <option value="Elektronik" <?= ($produk['kategori'] ?? '') === 'Elektronik' ? 'selected' : ''; ?>>Elektronik</option>
+                        <option value="Fashion" <?= ($produk['kategori'] ?? '') === 'Fashion' ? 'selected' : ''; ?>>Fashion</option>
+                        <option value="Kecantikan" <?= ($produk['kategori'] ?? '') === 'Kecantikan' ? 'selected' : ''; ?>>Kecantikan</option>
+                        <option value="Olahraga" <?= ($produk['kategori'] ?? '') === 'Olahraga' ? 'selected' : ''; ?>>Olahraga</option>
+                        <option value="Rumah Tangga" <?= ($produk['kategori'] ?? '') === 'Rumah Tangga' ? 'selected' : ''; ?>>Rumah Tangga</option>
+                        <option value="Lainnya" <?= ($produk['kategori'] ?? '') === 'Lainnya' ? 'selected' : ''; ?>>Lainnya</option>
+                    </select>
                 </div>
 
                 <div class="form-group">

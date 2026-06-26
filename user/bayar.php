@@ -59,7 +59,7 @@ if (isset($_POST['upload'])) {
 
     <header class="header">
         <div class="nav-container">
-            <a href="../index.php" class="brand">TokoOnline</a>
+            <a href="../index.php" class="brand">Nocturn Shop</a>
             <div class="nav-links">
                 <a href="pesanan_saya.php">Kembali ke Pesanan</a>
             </div>
@@ -85,8 +85,8 @@ if (isset($_POST['upload'])) {
                     <hr style="border:none; border-top: 1px solid var(--border); margin: 1rem 0;">
                     <p style="margin-bottom: 0.5rem; font-weight: 500;">Silakan transfer ke salah satu rekening berikut:</p>
                     <ul style="color: var(--text-secondary); line-height: 1.8; padding-left: 1.5rem;">
-                        <li><strong>BCA</strong>: 1234567890 a.n. Toko Online</li>
-                        <li><strong>Mandiri</strong>: 0987654321 a.n. Toko Online</li>
+                        <li><strong>Dana</strong>: 085185021163 | Zala Risky Pratama</li>
+                        <li><strong>Mandiri</strong>: 1850010723952 | Zala Risky Pratama</li>
                     </ul>
                 </div>
 
